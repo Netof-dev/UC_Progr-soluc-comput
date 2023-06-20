@@ -1,0 +1,27 @@
+#Trabalho calculadoraProfessor A3, utilizado Python
+
+def calcular_valor_a_receber():
+    nome = input("Insira o nome do professor: ")
+    regime = input("Insira o regime de pagamento (CLT, Horista ou PJ): ")
+
+        #Regime CLT
+    if regime in ["CLT", "clt", "Clt"]:
+        salario_mensal = float(input("Digite o salário mensal do professor: "))
+        valor_a_receber = salario_mensal
+        #Regime Horista
+    elif regime in ["Horista","horista", "HORISTA"]:
+        horas_trabalhadas = float(input("Digite o número de horas trabalhadas pelo professor: "))
+        valor_hora = float(input("Digite o valor da hora de trabalho: "))
+        valor_a_receber = horas_trabalhadas * valor_hora
+        #Regime PJ
+    elif regime in ["PJ", "pj", "Pj"]:
+        valor_contrato = float(input("Digite o valor do contrato do professor: "))
+        valor_a_receber = valor_contrato
+    else:
+        print("Regime de pagamento inválido. Tente novamente.")
+        return
+
+    print("Nome do professor:", nome)
+    print("Valor a receber: R$ ", valor_a_receber)
+
+calcular_valor_a_receber();
