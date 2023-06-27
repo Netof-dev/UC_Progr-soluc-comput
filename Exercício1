@@ -1,7 +1,0 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Novo teste curso Java");
-    }
-}
-/* Foi testado e o código não funciona com S de String em minusculo*/
-/* O ; afeta na hora de executar, caso não tenha ele dará erro */
