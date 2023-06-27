@@ -1,1 +1,14 @@
+package Exercicio1;
+
+public class Exercicio1 {
+    public class Main {
+        public void main(String[] args) {
+            System.out.println("Novo teste curso Java");
+        }
+    }
+}
+    /* Mudando a frase ele apenas imprime o que foi escrito, mas não gera erro */
+    /* Foi testado e o código não funciona com S de String em minusculo*/
+    /* O ; afeta na hora de executar, caso não tenha ele dará erro */
+
 
